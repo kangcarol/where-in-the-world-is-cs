@@ -2,7 +2,7 @@
 -- description has been traveling through Southern Europe. She's most 
 -- likely traveling someplace where she won't be noticed, so find the least
 -- populated country in Southern Europe, and we'll start looking for her there.
- 
+
 -- TODO: SELECT * FROM country WHERE region = 'Southern Europe' ORDER BY population LIMIT 1;
 
 
@@ -25,7 +25,7 @@
 -- obvious. We're following our gut on this one; find out what other city in 
 -- that country she might be flying to.
 
--- TODO: Write SQL query here
+-- TODO: SELECT * FROM city WHERE countrycode = 'SMR' AND name !='San Marino';
 
 
 -- Clue #5: Oh no, she pulled a switch – there are two cities with very similar 
@@ -34,7 +34,7 @@
 -- headed to, but doesn't end the same. Find out the city, and do another 
 -- search for what country it's in. Hurry!
 
--- TODO: Write SQL query here
+-- TODO: SELECT * FROM city WHERE name LIKE 'Serr%' AND countrycode !='BRA';
 
 
 -- Clue #6: We're close! Our South American agent says she just got a taxi at
@@ -42,7 +42,8 @@
 -- capital, and get there pronto! Send us the name of where you're headed and 
 -- we'll follow right behind you!
 
--- TODO: Write SQL query here
+-- TODO: SELECT * FROM country WHERE code='BRA'; 
+-- TODO capital 211
 
 
 -- Clue #7: She knows we're on to her – her taxi dropped her off at the 
@@ -64,5 +65,5 @@
 -- We're counting on you, gumshoe. Find out where she's headed, send us the 
 -- info, and we'll be sure to meet her at the gates with bells on.
 
--- TODO: Write SQL query here
+-- TODO: SELECT * FROM city WHERE population = 91084;
 
